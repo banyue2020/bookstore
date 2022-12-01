@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<article th:fragment="carousel">
-    <div class="container" id="gcarouse">
-        <!--轮播-->
-        <div class="carousel slide" id="myCarousel">
-            <!-- 轮播（Carousel）指标 -->
-            <ol class="carousel-indicators">
-                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-                <li data-slide-to="1" data-target="#myCarousel"></li>
-                <li data-slide-to="2" data-target="#myCarousel"></li>
-            </ol>
-            <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <a href="#"><img alt="First slide" class="pull-left" th:src="@{/images/advert1.jpg}"></a>
+    <article th:fragment="carousel">
+        <div class="container" id="gcarouse">
+            <!--轮播-->
+            <div class="carousel slide" id="myCarousel">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                    <li data-slide-to="1" data-target="#myCarousel"></li>
+                    <li data-slide-to="2" data-target="#myCarousel"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="#"><img alt="First slide" class="pull-left" th:src="@{/images/advert1.jpg}"></a>
 
-                </div>
-                <div class="item">
-                    <a href="#"><img alt="First slide" class="pull-left" th:src="@{/images/advert2.jpg}"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img alt="First slide" class="pull-left" th:src="@{/images/advert2.jpg}"></a>
 
-                </div>
-                <div class="item">
-                    <a href="#"><img alt="First slide" class="pull-left" th:src="@{/images/advert3.jpg}"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img alt="First slide" class="pull-left" th:src="@{/images/advert3.jpg}"></a>
 
+                    </div>
                 </div>
+
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" data-slide="prev" href="#myCarousel">&lsaquo;</a>
+                <a class="carousel-control right" data-slide="next" href="#myCarousel">&rsaquo;</a>
             </div>
-
-            <!-- 轮播（Carousel）导航 -->
-            <a class="carousel-control left" data-slide="prev" href="#myCarousel">&lsaquo;</a>
-            <a class="carousel-control right" data-slide="next" href="#myCarousel">&rsaquo;</a>
         </div>
-    </div>
-</article>
-<body>
+    </article>
 
-</body>
+    <body>
+
+    </body>
 </html>
