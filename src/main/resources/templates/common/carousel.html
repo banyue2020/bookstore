@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 
     <article th:fragment="carousel">
         <div class="container" id="gcarouse">
@@ -28,8 +28,12 @@
                 </div>
 
                 <!-- 轮播（Carousel）导航 -->
-                <a class="carousel-control left" data-slide="prev" href="#myCarousel">&lsaquo;</a>
-                <a class="carousel-control right" data-slide="next" href="#myCarousel">&rsaquo;</a>
+                <a class="carousel-control left" data-slide="prev" href="#myCarousel">
+                    <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" data-slide="next" href="#myCarousel">
+                    <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </div>
     </article>

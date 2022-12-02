@@ -9,7 +9,7 @@ body {
 
 #gcarouse img {
     width: 100%;
-    height: 200px;
+    height:auto;
 }
 
 .thumbnail a img {

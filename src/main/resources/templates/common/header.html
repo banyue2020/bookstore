@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <header th:fragment="nav">
     <div class="container" style="margin-top: 5px;">
         <ul class="layui-nav">
@@ -10,11 +10,11 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">图书分类</a>
                 <ul class="layui-nav-child">
                     <li>
-                        <a href="books_list.html" th:href="@{/book/bookList(category=1)}">文学类</a>
+                        <a href="books_list.html" th:href="@{/book/bookList(category=1)}">小说类</a>
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="books_list.html" th:href="@{/book/bookList(category=2)}">经管类</a>
+                        <a href="books_list.html" th:href="@{/book/bookList(category=2)}">科技类</a>
                     </li>
                     <li class="divider"></li>
                     <li>

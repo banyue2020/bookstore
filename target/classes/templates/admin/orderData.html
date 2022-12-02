@@ -129,7 +129,7 @@
         <tr class="warning" th:each="items,iter:${order.orderItems}">
             <td th:text="${items.book.id}">1001</td>
             <td><a th:href="@{/book/detail(id=${items.bookId})}"><img src="images/yuannideqingchunbufumengxiang.jpg"
-                                                                      th:src="@{'/public/' + ${items.book.imgUrl}}"></a>
+                                                                      th:src="@{'/images/' + ${items.book.imgUrl}}"></a>
             </td>
             <td th:text="${items.book.name}">愿你的青春不负梦想</td>
             <td th:text="${items.singlePrice}">80.0</td>

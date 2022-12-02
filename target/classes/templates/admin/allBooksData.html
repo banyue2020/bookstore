@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <!---->
-<head lang="en">
+<head lang="zh">
     <meta charset="UTF-8">
-    <title>优客书城数据页</title>
+    <title>hubu数据页</title>
 </head>
 <body>
 <div class="container">
@@ -48,7 +48,7 @@
                     </td>-->
                     <td th:text="${book.id}">1001</td>
                     <td class="layer-photos-demo" id="layer-photos-demo">
-                        <img src="images/tenxunchuan.jpg" th:src="@{'/public/' + ${book.imgUrl}}">
+                        <img src="images/tenxunchuan.jpg" th:src="@{'/images/' + ${book.imgUrl}}">
                     </td>
                     <td th:text="${book.name}">腾讯传</td>
                     <!--							<td th:text="${book.author}">作者</td>-->

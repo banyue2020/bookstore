@@ -61,7 +61,7 @@
                     </td>-->
                     <td th:text="${book.id}">1001</td>
                     <td class="layer-photos-demo" id="layer-photos-demo">
-                        <img src="images/tenxunchuan.jpg" th:src="@{'/public/' + ${book.imgUrl}}">
+                        <img src="images/tenxunchuan.jpg" th:src="@{'/images/' + ${book.imgUrl}}">
                     </td>
                     <td th:text="${book.name}">腾讯传</td>
                     <td th:text="${#calendars.format(book.publishDate,'yyyy-MM-dd')}">出版时间</td>

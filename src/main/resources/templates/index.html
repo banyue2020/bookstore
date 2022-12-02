@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head lang="en">
+<head lang="zh">
     <meta charset="UTF-8">
-    <title>网上书店</title>
+    <title>hubu书店</title>
     <link rel="stylesheet" th:href="@{/dist/css/bootstrap.min.css}" type="text/css">
     <link rel="stylesheet" th:href="@{/css/index.css}" type="text/css"/>
     <link rel="stylesheet" th:href="@{/css/animate.css}" type="text/css"/>
@@ -23,34 +23,44 @@
 
 <!--图书内容部分 begin-->
 <div class="container">
-    <!--文学类 begin-->
+
+    <!--小说类 begin-->
     <div>
-        <div class="text-primary"><img alt="" src="/images/bullet1.gif" th:src="@{/images/bullet1.gif}" title="">
-            <a href="#">文学类</a>
+        <div class="text-primary"><img alt="" src="/images/new-book.png" title="">
         </div>
         <!--加载数据-->
         <div id="selected"></div>
     </div>
-    <!--文学类 end-->
+    <!--小说类 end-->
 
-    <!--经管类 begin-->
-    <div>
-        <div class="text-primary"><img alt="" src="/images/bullet1.gif" th:src="@{/images/bullet1.gif}" title="">
-            <a href="#">经管类</a>
-        </div>
-        <div id="recommended"></div>
-    </div>
-    <!--经管类..-->
 
-    <!--其他类 begin-->
-    <div>
-        <div class="text-primary"><img alt="" src="/images/bullet1.gif" th:src="@{/images/bullet1.gif}" title="">
-            <a href="#">其他类</a>
-        </div>
-        <div id="bargain"></div>
-    </div>
+<!--   &lt;!&ndash;小说类 begin&ndash;&gt;-->
+<!--    <div>-->
+<!--        <div class="text-primary"><img alt="" src="/images/bullet1.gif" th:src="@{/images/bullet1.gif}" title="">-->
+<!--            <a href="#">小说类</a>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;加载数据&ndash;&gt;-->
+<!--        <div id="selected"></div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;小说类 end&ndash;&gt;-->
+
+<!--    &lt;!&ndash;科技类 begin&ndash;&gt;-->
+<!--    <div>-->
+<!--        <div class="text-primary"><img alt="" src="/images/bullet1.gif" th:src="@{/images/bullet1.gif}" title="">-->
+<!--            <a href="#">科技类</a>-->
+<!--        </div>-->
+<!--        <div id="recommended"></div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;科技类..&ndash;&gt;-->
+
+<!--    &lt;!&ndash;其他类 begin&ndash;&gt;-->
+<!--    <div>-->
+<!--        <div class="text-primary"><img alt="" src="/images/bullet1.gif" th:src="@{/images/bullet1.gif}" title="">-->
+<!--            <a href="#">其他类</a>-->
+<!--        </div>-->
+<!--        <div id="bargain"></div>-->
+<!--    </div>-->
     <!--其他 end-->
-    <hr>
     <!--首页底部信息 begin-->
     <div th:replace="common/footer :: footer"></div>
 

@@ -2,11 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>图书列表</title>
+    <title>图书分类</title>
 </head>
 <body>
 
-<!--图书列表 begin-->
+<!--图书分类 begin-->
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-3" th:each="book:${bookList}">
@@ -59,18 +59,18 @@
 									</span>
                     </div>
                 </li>
-                <li><a style="padding-top: 0px;border: 0px;">
-                    <label>每页显示:</label>
-                    <select class="form-control" id="pageSize" style="width: 100px;display: inline;"
-                            th:onchange="|loadDataBySize(this)|" th:value="${pageSize}">
-                        <option th:selected="${pageSize==2}" value="2">2</option>
-                        <option th:selected="${pageSize==4}" value="4">4</option>
-                        <option th:selected="${pageSize==6}" value="6">6</option>
-                        <option th:selected="${pageSize==8}" value="8">8</option>
-                    </select>
-                    <label>条</label>
-                </a>
-                </li>
+<!--                <li><a style="padding-top: 0px;border: 0px;">-->
+<!--                    <label>每页显示:</label>-->
+<!--                    <select class="form-control" id="pageSize" style="width: 100px;display: inline;"-->
+<!--                            th:onchange="|loadDataBySize(this)|" th:value="${pageSize}">-->
+<!--                        <option th:selected="${pageSize==2}" value="2">2</option>-->
+<!--                        <option th:selected="${pageSize==4}" value="4">4</option>-->
+<!--                        <option th:selected="${pageSize==6}" value="6">6</option>-->
+<!--                        <option th:selected="${pageSize==8}" value="8">8</option>-->
+<!--                    </select>-->
+<!--                    <label>条</label>-->
+<!--                </a>-->
+<!--                </li>-->
             </ul>
         </div>
     </div>
